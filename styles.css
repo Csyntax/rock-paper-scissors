@@ -1,0 +1,167 @@
+/* Resetting default styles for consistency across browsers */
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up the body with a dark background and centering content */
+body {
+    font-family: 'Roboto', sans-serif; /* Use a modern sans-serif font */
+    background-color: #1e1e2f; /* Dark background color for a gaming feel */
+    color: #ffffff; /* Light text color for contrast */
+    display: grid; /* Use CSS Grid to center content */
+    place-items: center; /* Center content vertically and horizontally */
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px; /* Padding for spacing */
+}
+
+/* Main container styling */
+.container {
+    text-align: center; /* Center text within the container */
+    background: #2c2c3e; /* Slightly lighter background for contrast */
+    border-radius: 15px; /* Rounded corners for a modern look */
+    padding: 20px 40px; /* Padding for spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for a 3D effect */
+}
+
+/* Main title styling */
+h1 {
+    font-size: 2.5em; /* Large font size for the main title */
+    margin-bottom: 10px; /* Margin below the title */
+    color: #f39c12; /* Bright color for the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for a glowing effect */
+}
+
+/* Subtitle styling */
+h2 {
+    font-size: 1.8em; /* Large font size for the subtitle */
+    margin-bottom: 20px; /* Margin below the subtitle */
+    color: #e67e22; /* Bright color for the subtitle */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for a glowing effect */
+}
+
+/* Container for buttons using Flexbox */
+.button-container {
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 15px; /* Space between buttons */
+    justify-content: center; /* Center buttons horizontally */
+    margin-bottom: 20px; /* Margin below the button container */
+}
+
+/* Button styling */
+button {
+    padding: 15px 25px; /* Padding for button size */
+    font-size: 1.2em; /* Larger font size for readability */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #e74c3c; /* Red background color */
+    color: #ffffff; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s, background-color 0.2s; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Button active effect */
+button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+/* Styling for game information using Flexbox */
+.game-info {
+    display: flex; /* Flexbox for vertical layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    margin-bottom: 20px; /* Margin below game info */
+}
+
+/* Styling for result, score, and final result text */
+#result, #score, #finalResult {
+    font-size: 1.5em; /* Large font size for readability */
+    margin-bottom: 10px; /* Space between paragraphs */
+    color: #ecf0f1; /* Light text color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Subtle shadow for contrast */
+}
+
+/* Styling for the reset button */
+#reset {
+    background-color: #3498db; /* Blue background color */
+    margin-top: 20px; /* Margin above the reset button */
+}
+
+/* Reset button hover effect */
+#reset:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Styling for the final result text */
+#finalResult {
+    margin-top: 20px; /* Margin above the final result */
+    font-size: 1.8em; /* Larger font size for emphasis */
+    color: #f1c40f; /* Bright yellow color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for emphasis */
+}
+
+/* Footer styling */
+footer {
+    background-color: #34495e; /* Dark background color */
+    color: #ffffff; /* Light text color */
+    text-align: center; /* Center-align text */
+    padding: 10px 0; /* Padding for spacing */
+    position: fixed; /* Fixed position at the bottom */
+    left: 0; /* Align to the left */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width of the viewport */
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    /* Adjust container padding and font sizes for tablets */
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    #result, #score, #finalResult {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust container padding and font sizes for mobile devices */
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+    #result, #score, #finalResult {
+        font-size: 1em;
+    }
+}
