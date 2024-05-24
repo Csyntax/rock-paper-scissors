@@ -3,7 +3,7 @@ Rock, paper and scissors using JavaScript
 
 # Rock Paper Scissors Game
 
-This is a simple Rock Paper Scissors game built using HTML, CSS, and JavaScript. The game allows the user to play against the computer for a total of 5 rounds. The winner is determined based on the classic Rock Paper Scissors rules.
+This is a simple Rock Paper Scissors game built using HTML, CSS, and JavaScript. The game allows the user to play against the computer. The first player to reach 5 wins the game. The winner is determined based on the classic Rock Paper Scissors rules.
 
 ## How to Play
 
@@ -11,7 +11,7 @@ This is a simple Rock Paper Scissors game built using HTML, CSS, and JavaScript.
 2. Click on either "ROCK", "PAPER", or "SCISSORS" to make your choice.
 3. The computer will randomly choose its move.
 4. The result of each round will be displayed, along with the current score.
-5. After 5 rounds, the final winner will be declared.
+5. The first player to reach 5 wins the game and is declared the final winner.
 
 ## Technologies Used
 
@@ -30,18 +30,19 @@ This is a simple Rock Paper Scissors game built using HTML, CSS, and JavaScript.
 
 - Responsive design for playability on different devices.
 - Reset button to start a new game.
-- Final result display after all rounds are played.
+- Final result display after the game is won.
 
-##  Changing Number of Rounds
+## Changing Number of Wins
 
-- You can edit the number of rounds played by modifying the `totalRounds` constant in the `rockpaperscissors.js` file.
+The game is set to end when one player reaches 5 wins. You can modify this by changing the `winningScore` variable in the `rockpaperscissors.js` file.
 
-- For example, to play for 10 rounds, change:
- 
- ```javascript
-const totalRounds = 5; // Total number of rounds in the game
+For example, to end the game at 10 wins, change:
 
-const totalRounds = 10; // Play for 10 rounds
+```javascript
+const winningScore = 5; // Game ends when a player reaches 5 wins
+
+const winningScore = 10; // Game ends when a player reaches 10 wins
+
 
 Similarly, you can set totalRounds to any desired number (e.g., 20, 30, etc.) to play more rounds.
 ```
